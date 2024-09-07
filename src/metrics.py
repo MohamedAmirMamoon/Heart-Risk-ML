@@ -7,6 +7,7 @@ from keras.models import load_model
 data = pd.read_csv('../dataset/processed_heart.csv')
 
 # Prepare the data
+#
 X = np.array(data.drop(['target'], axis=1))
 y = np.array(data['target'])
 
